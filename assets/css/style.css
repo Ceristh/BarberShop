@@ -25,6 +25,118 @@
   color: #d76c69;
 }
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.random-btn {
+  font-size: 12px;
+  border-radius: 2.8rem;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.7rem;
+  background-color: #6c6e70;
+  color: #ffffff;
+  border-color: #6c6e70;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .random-btn {
+    font-size: 16px;
+    margin-right: 0.5rem;
+  }
+}
+.random-btn:focus, .random-btn:active, .random-btn:visited {
+  border: 2px solid #d1d1d1;
+}
+.random-btn:hover {
+  background-color: #d1d1d1;
+  color: #ffffff;
+  border-color: #d1d1d1;
+}
+
+.random-pagination {
+  display: flex;
+  border-radius: 3rem;
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .random-pagination {
+    font-size: 16px;
+  }
+}
+.random-pagination__item:first-child .random-pagination__link {
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  color: #6c6e70;
+}
+.random-pagination__item:last-child .random-pagination__link {
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.random-pagination__link {
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  color: #222323;
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+}
+.random-pagination__link:hover {
+  color: #6c6e70;
+}
+.random-pagination--active {
+  background-color: #121619;
+  color: #ffffff;
+}
+.random-pagination--active:hover {
+  color: #6c6e70;
+}
+
+.random-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121619;
+  background-image: url("../img/post-image.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 702px;
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  text-align: center;
+  padding: 0 2rem;
+}
+.random-header__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .random-header__title {
+    max-width: 650px;
+    font-size: 70px;
+  }
+}
+.random-header__icon {
+  position: absolute;
+  bottom: 12.5rem;
+}
+@media (min-width: 768px) {
+  .random-header__icon {
+    top: 40.625rem;
+  }
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

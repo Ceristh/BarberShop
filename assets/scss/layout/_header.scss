@@ -1,0 +1,35 @@
+// # Encabezamiento
+
+.random-header {
+    @include flex-align(column, center, center);
+        background-color: $eerie-black;
+        background-image: url("../img/post-image.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 702px;
+        color: $white;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+        text-align: center;
+        padding: 0 2rem;
+
+    &__title {
+        font-family: $playfair;
+        font-weight: $playfair-black-italic;
+        font-style: italic;
+        font-size: $x-large;
+
+        @include respond-to("medium") {
+        max-width: 650px;
+        font-size: $xx-large;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        bottom: 12.5rem;
+
+        @include respond-to("medium") {
+        top: 40.625rem;
+        }
+    }
+}
