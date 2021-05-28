@@ -137,6 +137,18 @@ ul {
   }
 }
 
+.navbar__img {
+  width: 81px;
+  left: 20px;
+}
+
+footer {
+  background-color: #121619 !important;
+  padding: 4rem 0;
+  height: 206px;
+  text-align: center;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
