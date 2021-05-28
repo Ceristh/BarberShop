@@ -18,6 +18,14 @@
 @import 'layout/section';
 @import 'layout/footer';
 
+//pages
+@import 'pages/home';
+@import 'pages/contact';
+
+//themes
+@import 'themes/theme';
+@import 'themes/admin';
+
 //vendors
 @import "vendors/bootstrap_4.6/bootstrap.scss";
 @import 'vendors/bootstrap';
