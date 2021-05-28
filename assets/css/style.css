@@ -142,6 +142,117 @@ ul {
   left: 20px;
 }
 
+.random-section__content {
+  padding: 2.5rem 2rem;
+}
+@media (min-width: 768px) {
+  .random-section__content {
+    padding: 4rem 0;
+  }
+}
+.random-section__date {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  color: #6c6e70;
+  margin-bottom: 2.3rem;
+}
+.random-section__text {
+  line-height: 2.4rem;
+  font-weight: 300;
+  color: #222323;
+  margin-bottom: 2rem;
+}
+.random-section__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+}
+@media (min-width: 768px) {
+  .random-section__buttons {
+    display: block;
+  }
+}
+.random-section__author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 3rem;
+}
+@media (min-width: 768px) {
+  .random-section__author {
+    flex-direction: row;
+    padding: 3rem 4rem 4rem;
+  }
+}
+.random-section__img {
+  width: 132px;
+}
+@media (min-width: 768px) {
+  .random-section__img {
+    width: 180px;
+  }
+}
+.random-section__author-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 3rem;
+}
+@media (min-width: 768px) {
+  .random-section__author-data {
+    align-items: flex-start;
+  }
+}
+.random-section__author-name {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 30px;
+  font-style: italic;
+  padding-top: 1.3rem;
+}
+@media (min-width: 768px) {
+  .random-section__author-name {
+    padding-top: 0;
+  }
+}
+.random-section__link {
+  font-size: 16px;
+  font-weight: 300;
+  color: #d76c69;
+}
+@media (min-width: 768px) {
+  .random-section__link {
+    font-size: 18px;
+  }
+}
+.random-section__link:hover {
+  color: #222323;
+  text-decoration: none;
+}
+.random-section__link:active {
+  color: #e56353;
+}
+.random-section__naranjo {
+  color: #e56353;
+}
+.random-section__author-text {
+  font-size: 12px;
+  line-height: 1.8rem;
+  max-width: 500px;
+  margin-bottom: 0;
+}
+.random-section__pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 0;
+}
+
 footer {
   background-color: #121619 !important;
   padding: 4rem 0;
