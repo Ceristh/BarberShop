@@ -1,0 +1,27 @@
+// # Mixins Sass
+
+@mixin respond-to($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+
+    @if $raw-query {
+        $query: if(
+        type-of($raw-query) == "string",
+        unquote($raw-query),
+        inspect($raw-query)
+        );
+
+        @media #{$query} {
+        @content;
+        }
+    } @else {
+        @error 'No value found for `#{$breakpoint}`. '
+            + 'Please make sure it is defined in `$breakpoints` map.';
+    }
+}
+
+    @mixin flex-align($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
